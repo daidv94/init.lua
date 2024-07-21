@@ -56,3 +56,5 @@ vim.keymap.set("n", "L", ":bnext<CR>")
 vim.keymap.set("n", "<leader>o", ":normal o<CR>")
 vim.keymap.set("n", "<leader>O", ":normal O<CR>")
 
+vim.keymap.set("n", "<leader>gf", ":!$HOME/bin/terragrunt hclfmt<CR>")
+
