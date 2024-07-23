@@ -42,13 +42,13 @@ vim.keymap.set(
   "oif err != nil {<CR>}<Esc>Oreturn err<Esc>"
 )
 
-vim.keymap.set("n", "<leader>h", ":wincmd h<CR>")
-vim.keymap.set("n", "<leader>j", ":wincmd j<CR>")
-vim.keymap.set("n", "<leader>k", ":wincmd k<CR>")
-vim.keymap.set("n", "<leader>l", ":wincmd l<CR>")
+vim.keymap.set("n", "<C-h>", ":wincmd h<CR>")
+vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
+vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
+vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 
-vim.keymap.set("n", "<C-j>", ":vsplit<CR>")
-vim.keymap.set("n", "<C-k>", ":split<CR>")
+vim.keymap.set("n", "-", ":split<CR>")
+vim.keymap.set("n", "|", ":vsplit<CR>")
 
 vim.keymap.set("n", "H", ":bprevious<CR>")
 vim.keymap.set("n", "L", ":bnext<CR>")
