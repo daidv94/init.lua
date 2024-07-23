@@ -4,6 +4,10 @@
 vim.opt.list = false
 vim.opt.listchars = "space:·,tab:->"
 
+vim.opt.foldenable = true
+vim.opt.foldmethod = 'indent'
+vim.o.foldlevelstart = 99
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
@@ -36,4 +40,3 @@ vim.opt.colorcolumn = "120"
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
-
