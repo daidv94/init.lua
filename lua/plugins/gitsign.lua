@@ -5,6 +5,23 @@ return {
   config = function()
     require("gitsigns").setup()
     local gitsigns = require('gitsigns')
+
+    -- Navigation
+    vim.keymap.set('n', ']c', function()
+      if vim.wo.diff then
+        vim.cmd.normal({ ']c', bang = true })
+      else
+        gitsigns.nav_hunk('next')
+      end
+    end)
+
+    vim.keymap.set('n', '[c', function()
+      if vim.wo.diff then
+        vim.cmd.normal({ '[c', bang = true })
+      else
+        gitsigns.nav_hunk('prev')
+      end
+    end)
     -- Actions
     vim.keymap.set('n', '<leader>hs', gitsigns.stage_hunk)
     vim.keymap.set('n', '<leader>hr', gitsigns.reset_hunk)
@@ -22,5 +39,6 @@ return {
 
     -- Text object
     vim.keymap.set({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+    -- End
   end,
 }
