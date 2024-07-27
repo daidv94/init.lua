@@ -36,7 +36,7 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "120"
+vim.opt.colorcolumn = "150"
 
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
