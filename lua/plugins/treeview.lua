@@ -7,8 +7,9 @@ return {
   },
   config = function()
     require("nvim-tree").setup {}
-    vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
-    vim.keymap.set('n', '<leader>r', ':NvimTreeFindFile<CR>', { noremap = true, silent = true })
+    vim.keymap.set('n', '<leader>ee', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+    vim.keymap.set('n', '<leader>er', ':NvimTreeFindFile<CR>', { noremap = true, silent = true })
+    vim.keymap.set('n', '<leader>ec', ':NvimTreeCollapse<CR>', { noremap = true, silent = true })
   end,
 }
 
