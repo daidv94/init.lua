@@ -1,10 +1,10 @@
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 vim.opt.showmode = false
 
 vim.opt.foldenable = true
-vim.opt.foldmethod = 'indent'
+vim.opt.foldmethod = "indent"
 vim.o.foldlevelstart = 99
 
 vim.opt.nu = true
@@ -40,4 +40,4 @@ vim.opt.updatetime = 50
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
-vim.opt.iskeyword:append({ '-' })
+vim.opt.iskeyword:append({ "-" })

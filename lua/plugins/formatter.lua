@@ -34,7 +34,7 @@ return {
           hcl = { "terragrunt_hclfmt" },
           terraform = { "terraform_fmt" },
           json = { "jq" },
-          yaml = { "yamlfmt" },
+          yaml = { "yamlfix" },
         },
       })
     end,
