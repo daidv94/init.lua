@@ -27,7 +27,7 @@ return {
     -- end
 
     vim.keymap.set("n", "<leader>a", function() harpoon:list():add() end)
-    vim.keymap.set("n", "<leader>e", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
+    vim.keymap.set("n", "<C-e>", function() harpoon.ui:toggle_quick_menu(harpoon:list()) end)
     -- vim.keymap.set("n", "<leader>ht", function() toggle_telescope(harpoon:list()) end,
     --   { desc = "Open harpoon window by telescope" })
 
@@ -36,9 +36,9 @@ return {
     vim.keymap.set("n", "<leader>k", function() harpoon:list():select(3) end)
     vim.keymap.set("n", "<leader>l", function() harpoon:list():select(4) end)
 
-    vim.keymap.set("n", "<leader>", function() harpoon:list():replace_at(1) end)
-    vim.keymap.set("n", "<leader>", function() harpoon:list():replace_at(2) end)
-    vim.keymap.set("n", "<leader>", function() harpoon:list():replace_at(3) end)
-    vim.keymap.set("n", "<leader>", function() harpoon:list():replace_at(4) end)
+    vim.keymap.set("n", "<leader><C-h>", function() harpoon:list():replace_at(1) end)
+    vim.keymap.set("n", "<leader><C-j>", function() harpoon:list():replace_at(2) end)
+    vim.keymap.set("n", "<leader><C-k>", function() harpoon:list():replace_at(3) end)
+    vim.keymap.set("n", "<leader><C-l>", function() harpoon:list():replace_at(4) end)
   end,
 }
