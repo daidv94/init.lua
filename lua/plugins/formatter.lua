@@ -35,6 +35,7 @@ return {
           terraform = { "terraform_fmt" },
           json = { "jq" },
           yaml = { "yamlfix" },
+          jsonnet = { "jsonnetfmt" },
         },
       })
     end,

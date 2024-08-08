@@ -12,6 +12,7 @@ return {
         "lua",
         "rust",
         "jsdoc",
+        "jsonnet",
         "bash",
         "go",
         "yaml",

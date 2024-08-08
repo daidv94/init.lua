@@ -17,8 +17,8 @@ return {
         adaptive_size = true,
       },
     })
-    vim.keymap.set("n", "<leader>ee", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
-    vim.keymap.set("n", "<leader>er", ":NvimTreeFindFile<CR>", { noremap = true, silent = true })
-    vim.keymap.set("n", "<leader>ec", ":NvimTreeCollapse<CR>", { noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>te", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>tr", ":NvimTreeFindFile<CR>", { noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>tc", ":NvimTreeCollapse<CR>", { noremap = true, silent = true })
   end,
 }
