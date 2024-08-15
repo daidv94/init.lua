@@ -6,6 +6,7 @@ vim.opt.showmode = false
 vim.opt.foldenable = true
 vim.opt.foldmethod = "indent"
 vim.o.foldlevelstart = 99
+vim.o.mouse = "a"
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
