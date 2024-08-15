@@ -5,6 +5,11 @@ vim.g.loaded_netrwPlugin = 1
 -- pressing "Q" in normal mode enters Ex mode, this line to disable it
 vim.keymap.set("n", "Q", "<nop>")
 
+vim.keymap.set("i", "<C-h>", "<Left>", { desc = "move left" })
+vim.keymap.set("i", "<C-l>", "<Right>", { desc = "move right" })
+vim.keymap.set("i", "<C-j>", "<Down>", { desc = "move down" })
+vim.keymap.set("i", "<C-k>", "<Up>", { desc = "move up" })
+
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -46,3 +51,9 @@ vim.keymap.set("n", "<leader>o", ":normal o<CR>")
 vim.keymap.set("n", "<leader>O", ":normal O<CR>")
 
 vim.keymap.set("v", "y", "y']")
+
+-- Quickfix list keymap
+vim.keymap.set("n", "<leader>qo", ":copen<CR>")
+vim.keymap.set("n", "<leader>qc", ":cclose<CR>")
+vim.keymap.set("n", "<C-p>", ":cprev<CR>")
+vim.keymap.set("n", "<C-n>", ":cnext<CR>")

@@ -21,11 +21,15 @@ return {
       local word = vim.fn.expand("<cWORD>")
       builtin.grep_string({ search = word })
     end)
-    vim.keymap.set("n", "<leader>ss", function()
-      builtin.grep_string({ search = vim.fn.input("Grep > ") })
-    end)
+    -- vim.keymap.set("n", "<leader>ss", function()
+    --   builtin.grep_string({ search = vim.fn.input("Grep > ") })
+    -- end)
+    vim.keymap.set("n", "<leader>ss", builtin.live_grep, {})
     vim.keymap.set("n", "<leader>sh", builtin.help_tags, {})
     vim.keymap.set("n", "<leader>sm", builtin.marks, {})
     vim.keymap.set("n", "<leader>sp", builtin.oldfiles, {})
+    vim.keymap.set("n", "<leader>sq", builtin.quickfix, {})
+    vim.keymap.set("n", "<leader>sl", builtin.loclist, {})
+    vim.keymap.set("n", "<leader>sj", builtin.jumplist, {})
   end,
 }
