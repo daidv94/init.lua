@@ -44,9 +44,6 @@ vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 vim.keymap.set("n", "-", ":split<CR>")
 vim.keymap.set("n", "|", ":vsplit<CR>")
 
--- vim.keymap.set("n", "H", ":bprevious<CR>")
--- vim.keymap.set("n", "L", ":bnext<CR>")
-
 vim.keymap.set("n", "<leader>o", ":normal o<CR>")
 vim.keymap.set("n", "<leader>O", ":normal O<CR>")
 
@@ -55,5 +52,8 @@ vim.keymap.set("v", "y", "y']")
 -- Quickfix list keymap
 vim.keymap.set("n", "<leader>qo", ":copen<CR>")
 vim.keymap.set("n", "<leader>qc", ":cclose<CR>")
-vim.keymap.set("n", "<C-p>", ":cprev<CR>")
-vim.keymap.set("n", "<C-n>", ":cnext<CR>")
+vim.keymap.set("n", "H", ":cprev<CR>")
+vim.keymap.set("n", "L", ":cnext<CR>")
+
+-- Markdown keymap
+vim.keymap.set("n", "<leader>m", ":MarkdownPreviewToggle<CR>")
