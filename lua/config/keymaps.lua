@@ -55,5 +55,7 @@ vim.keymap.set("n", "<leader>qc", ":cclose<CR>")
 vim.keymap.set("n", "H", ":cprev<CR>")
 vim.keymap.set("n", "L", ":cnext<CR>")
 
+vim.keymap.set("n", "<leader>qr", [[:cfdo %s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
 -- Markdown keymap
 vim.keymap.set("n", "<leader>m", ":MarkdownPreviewToggle<CR>")
