@@ -27,15 +27,15 @@ return {
           }
         end,
         formatters_by_ft = {
-          lua        = { "stylua" },
+          lua = { "stylua" },
           -- Conform can also run multiple formatters sequentially
-          python     = { "isort", "black" },
+          python = { "isort", "black" },
           javascript = { "prettierd", "prettier", stop_after_first = true },
-          hcl        = { "terragrunt_hclfmt" },
-          terraform  = { "terraform_fmt" },
-          json       = { "jq" },
-          yaml       = { "yamlfix" },
-          jsonnet    = { "jsonnetfmt" },
+          hcl = { "terragrunt_hclfmt" },
+          terraform = { "terraform_fmt" },
+          json = { "jq" },
+          yaml = { "yamlfix" },
+          jsonnet = { "jsonnetfmt" },
         },
       })
     end,
