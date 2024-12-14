@@ -57,7 +57,7 @@
   },
   "lazy.nvim": {
     "branch": "main",
-    "commit": "7c493713bc2cb392706866eeba53aaef6c8e9fc6"
+    "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3"
   },
   "lualine.nvim": {
     "branch": "master",
@@ -85,7 +85,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "ffe543e171792e4e7c42f1e73c4ab5c6fe71b861"
+    "commit": "3cb6c05779459eb5fe9cddbb47675593594f0415"
   },
   "nvim-surround": {
     "branch": "main",
@@ -101,7 +101,7 @@
   },
   "nvim-web-devicons": {
     "branch": "master",
-    "commit": "dd0c15170f9ab2ffac695d90212318c05078751d"
+    "commit": "8a8e0668b8ad6124813a44a626afdf850dd24874"
   },
   "plenary": {
     "branch": "master",
