@@ -49,3 +49,10 @@ vim.opt.updatetime = 50
 vim.opt.termguicolors = true
 
 -- vim.opt.iskeyword:append({ "-" })
+
+-- filetype ---
+vim.filetype.add({
+  extension = {
+    tf = "terraform"
+  }
+})

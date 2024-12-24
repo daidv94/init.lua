@@ -2,8 +2,7 @@ return {
   "neovim/nvim-lspconfig",
   dependencies = {
     "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "hrsh7th/cmp-nvim-lsp",
+    "williamboman/mason-lspconfig.nvim", "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-path",
     "hrsh7th/cmp-cmdline",
@@ -17,7 +16,7 @@ return {
     local cmp = require("cmp")
     local cmp_lsp = require("cmp_nvim_lsp")
     local capabilities =
-      vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_lsp.default_capabilities())
+        vim.tbl_deep_extend("force", {}, vim.lsp.protocol.make_client_capabilities(), cmp_lsp.default_capabilities())
 
     require("fidget").setup({})
     require("mason").setup()
@@ -56,7 +55,7 @@ return {
             capabilities = capabilities,
             settings = {
               Lua = {
-                runtime = { version = "Lua 5.1" },
+                runtime = { version = "LuaJIT" },
                 diagnostics = {
                   globals = { "bit", "vim", "it", "describe", "before_each", "after_each" },
                 },
@@ -87,6 +86,29 @@ return {
       }, {
         { name = "buffer" },
       }),
+    })
+
+    -- `:` cmdline setup.
+    cmp.setup.cmdline(':', {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = cmp.config.sources({
+        { name = 'path' }
+      }, {
+        {
+          name = 'cmdline',
+          option = {
+            ignore_cmds = { 'Man', '!' }
+          }
+        }
+      })
+    })
+
+    -- `/` cmdline setup.
+    cmp.setup.cmdline('/', {
+      mapping = cmp.mapping.preset.cmdline(),
+      sources = {
+        { name = 'buffer' }
+      }
     })
 
     vim.diagnostic.config({
