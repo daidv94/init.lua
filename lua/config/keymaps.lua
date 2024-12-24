@@ -41,9 +41,6 @@ vim.keymap.set("n", "<C-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<C-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<C-l>", ":wincmd l<CR>")
 
-vim.keymap.set("n", "-", ":split<CR>")
-vim.keymap.set("n", "|", ":vsplit<CR>")
-
 vim.keymap.set("n", "<leader>o", ":normal o<CR>")
 vim.keymap.set("n", "<leader>O", ":normal O<CR>")
 

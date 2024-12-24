@@ -28,7 +28,6 @@ return {
         end,
         formatters_by_ft = {
           lua = { "stylua" },
-          -- Conform can also run multiple formatters sequentially
           python = { "isort", "black" },
           javascript = { "prettierd", "prettier", stop_after_first = true },
           hcl = { "terragrunt_hclfmt" },
@@ -36,6 +35,8 @@ return {
           json = { "jq" },
           yaml = { "yamlfix" },
           jsonnet = { "jsonnetfmt" },
+          go = { "goimports", "gofmt" },
+          rust = { "rustfmt", lsp_format = "fallback" },
         },
       })
     end,
