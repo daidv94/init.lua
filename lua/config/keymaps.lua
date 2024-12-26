@@ -9,7 +9,7 @@ vim.keymap.set("i", "<C-h>", "<Left>", { desc = "move left" })
 vim.keymap.set("i", "<C-l>", "<Right>", { desc = "move right" })
 vim.keymap.set("i", "<C-j>", "<Down>", { desc = "move down" })
 vim.keymap.set("i", "<C-k>", "<Up>", { desc = "move up" })
-vim.keymap.set("i", "<C-e>", "<Esc>")
+vim.keymap.set("i", "jj", "<Esc>")
 
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
