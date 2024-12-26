@@ -6,7 +6,7 @@ return {
   },
 
   config = function()
-    local capabilities = require('blink.cmp').get_lsp_capabilities()
+    local capabilities = require("blink.cmp").get_lsp_capabilities()
 
     require("mason").setup()
     require("mason-lspconfig").setup({
@@ -45,7 +45,7 @@ return {
             settings = {
               gopls = {
                 completeUnimported = true,
-                usePlaceholders = true
+                usePlaceholders = true,
               },
             },
           })

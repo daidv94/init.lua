@@ -65,7 +65,7 @@
   },
   "nvim-lspconfig": {
     "branch": "master",
-    "commit": "ff2b85abaa810f6611233dbe6d31c07510ebf43d"
+    "commit": "c580f34bc5fdca8aaf737a9ab8a5d775cb940e57"
   },
   "nvim-surround": {
     "branch": "main",
@@ -77,7 +77,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "ac6a72a6f83218216948e898362f09029b8035dc"
+    "commit": "096babebf6daef2a046650883082ed2b3dcc5b67"
   },
   "nvim-web-devicons": {
     "branch": "master",
