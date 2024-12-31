@@ -1,15 +1,8 @@
+-- Refer https://github.com/numToStr/Comment.nvim to get the key mapping
+-- Or use :help comment in neovim
 return {
   "numToStr/Comment.nvim",
   config = function()
-    require("Comment").setup({
-      toggler = {
-        line = "<leader>c",
-        block = "<leadre>b",
-      },
-      opleader = {
-        line = "<leader>c",
-        block = "<leader>b",
-      },
-    })
+    require("Comment").setup({})
   end,
 }
