@@ -3,8 +3,9 @@ vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 vim.opt.showmode = false
 
-vim.opt.foldenable = true
-vim.opt.foldmethod = "indent"
+vim.o.foldenable = false
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.o.foldlevelstart = 99
 vim.o.mouse = "a"
 
@@ -14,7 +15,6 @@ vim.opt.relativenumber = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
--- Game changing option
 vim.opt.virtualedit = "block"
 vim.opt.ignorecase = true
 
