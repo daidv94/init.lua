@@ -23,9 +23,10 @@ return {
       },
 
       list = {
-        selection = function(ctx)
-          return ctx.mode == "cmdline" and "auto_insert" or "preselect"
-        end,
+        selection = {
+          preselect = false,
+          auto_insert = true,
+        },
       },
 
       menu = {
