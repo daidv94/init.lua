@@ -1,6 +1,6 @@
-# 💤 My LazyVim
+# My Neovim configuration
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+My neovim configuration including config, custom keymap. Start from [LazyVim](https://github.com/LazyVim/LazyVim).
 Simple just clone this repository into `~/.config/nvim` and start `nvim`
 
 ```bash
