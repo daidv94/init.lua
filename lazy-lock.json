@@ -73,7 +73,7 @@
   },
   "nvim-treesitter": {
     "branch": "master",
-    "commit": "f0c928dbe93533b7e35894a8f957f40150d1f663"
+    "commit": "a67a312e7b08cbf2895d8f29a4b1f38f18d9a8e8"
   },
   "nvim-web-devicons": {
     "branch": "master",
